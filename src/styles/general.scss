@@ -1,0 +1,17 @@
+html {
+	overflow: hidden;
+}
+
+body {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+// Layout modifiers
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.container-fw {
+	margin: 0 20px;
+}

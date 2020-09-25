@@ -1,0 +1,46 @@
+.vm-menu {
+	background-color: $red-light;
+	height: 100vh;
+	padding: 20px;
+	position: relative;
+	transform: translateY(-115vh);
+	transition: all 300ms ease-in;
+	width: 100%;
+
+	&.open {
+		transform: translateY(-10vh);
+	}
+
+	&__close {
+		cursor: pointer;
+		color: $blue-light;
+	}
+
+	&__nav {
+		align-items: stretch;
+		display: flex;
+		flex-direction: column;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			margin-top: 20%;
+
+			li {
+				margin: 10px 0;
+
+				a {
+					color: $blue-light;
+					font-size: 1.5rem;
+					transition: all 300ms ease-in;
+
+					&:hover {
+						color: $white;
+						text-decoration: underline;
+					}
+				}
+			}
+			
+		}
+	}
+}
