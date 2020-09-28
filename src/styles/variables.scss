@@ -5,25 +5,31 @@ $red-light:#f56a79;
 $red-strong: #ff414d;
 $blue-strong: #1aa6b7;
 $blue-strongest: #0f6c77;
+$blue-sky: rgb(0,111,185);
+$black: #000;
+$blue-dark: rgb(12,31,52);
+$wp-green: #4caf50;
+$gray-dark: #232323;
+$gray-light: rgb(240,244,246);
+$gray-darker: #222533;
 
 
 // Breakpoints
 @mixin bp ($breakpoint) {
-
-	// $breakpoint is simply a variable that can have several values
-
-	@if $breakpoint==tablet {
-
-			// here `laptop` is the value of $breakpoint
-			// when call laptop, we mean the following piece of code        
-
-		@media only screen and (max-width: 600px) {
-			@content;
-		}
+	@if $breakpoint==desktop_xl {
+	@media only screen and (min-width: 1600px) {
+		@content;
 	}
+}
 
-	@if $breakpoint==mobile {
-		@media only screen and (max-width: 480px) {
+	@if $breakpoint==desktop {
+	@media only screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+	@if $breakpoint==tablet {      
+		@media only screen and (min-width: 480px) {
 			@content;
 		}
 	}

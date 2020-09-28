@@ -1,17 +1,135 @@
-html {
-	overflow: hidden;
-}
-
 body {
 	font-family: 'Fira Sans', sans-serif;
 }
 
+body, html {
+	height: 100%;
+}
+
+h1, h2, h3, h4 ,h5 ,h6, p {
+	margin: 0;
+	text-rendering: optimizelegibility;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+	font-family: 'Open Sans',Arial,sans-serif;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+h6 {
+	font-size: 1.1rem;
+}
+
 // Layout modifiers
 .container {
-	margin: 0 auto;
+	margin: 0 20px;
 	max-width: 1200px;
+
+	@include bp(desktop) {
+		margin: 0 auto;
+	}
+}
+
+.bg-light {
+	background-color: $gray-light;
+}
+
+.bg-dark {
+	background-color: $gray-darker;
 }
 
 .container-fw {
 	margin: 0 20px;
+}
+
+// Classes for margins and paddings
+@for $i from 1 through 10 {
+  .mt-#{$i} {
+    margin-top: #{$i * 5}px;
+	}
+	
+	.mb-#{$i} {
+    margin-bottom: #{$i * 5}px;
+	}
+	
+	.pt-#{$i} {
+    padding-top: #{$i * 5}px;
+	}
+	
+	.pb-#{$i} {
+    padding-bottom: #{$i * 5}px;
+  }
+}
+
+
+// Generic Buttons
+
+.button {
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	font-size: .8rem;
+	margin: 0;
+	padding: 1rem 2rem;
+	text-decoration: none;	
+	text-align: center;
+	text-transform: uppercase;
+	transition: 200ms ease-in all;
+
+	&.button__primary {
+		background: $gray-dark;
+		border: 1px solid $white;
+		color: $white;
+
+		&:hover {
+			background: $white;
+			color: $gray-dark;
+		}
+	}
+
+	&.button__secondary {
+		background: $white;
+		border: 1px solid $gray-dark;
+		color: $gray-dark;
+
+		&:hover {
+			background: $gray-dark;
+			color: $white;
+		}
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.whatsapp-button {
+	background: $wp-green;
+	align-items: center;
+	color: $white;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+
+	img {
+		margin-right: 20px;
+		width: 30px;
+	}
 }

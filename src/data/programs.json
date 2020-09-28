@@ -1,0 +1,34 @@
+[
+	{
+		"name": "Vimotus Movilidad",
+		"duration": "12 semanas - 45 min al día",
+		"info": "Programa movilidad, mejora tu capacidad de movimiento a través de ejercicios progresivos.",
+		"price": "$40.000",
+		"id": "mobility",
+		"free": "false"
+	},
+	{
+		"name": "Vimotus Fuerza resistencia en casa",
+		"duration": "12 semanas - 45 min al día",
+		"info": "Programa fuerza resistencia, incrementa tu capacidad múscular con ejercicios de calistenia.",
+		"price": "$70.000",
+		"id": "strength",
+		"free": "false"
+	},
+	{
+		"name": "Vimotus Glúteo",
+		"duration": "12 semanas - 45 min al día",
+		"info": "Programa glúteo, fortalece y dale forma a tus glúteos con ejercicios enfocados en toda la zona inferior de tu cuerpo.",
+		"price": "$40.000",
+		"id": "glutes",
+		"free": "false"
+	},
+	{
+		"name": "Vimotus Core",
+		"duration": "12 semanas - 45 min al día",
+		"info": "Programa Core, tu nucleo es la base de todo tu cuerpo, fortalece esa zona con este programa que hará que tengas un core de acero.",
+		"price": "$40.000",
+		"id": "core",
+		"free": "false"
+	}
+]

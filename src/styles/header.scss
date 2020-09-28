@@ -1,5 +1,6 @@
 .vm-header {
 	align-items: center;
+	border-bottom: 1px solid $blue-light;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -11,20 +12,20 @@
 	}
 
 	&__mobile-menu {
-		display: none;
-		justify-self: flex-start;
+		cursor: pointer;
+		display: block;
+		margin-left: 20px;
 
-		@include bp(tablet) {
-			cursor: pointer;
-			display: block;
-			margin-left: 20px;
+		@include bp(desktop) {
+			display: none;
+			justify-self: flex-start;
 		}
 	}
 
 	&__nav {
 		ul {
 			align-items: center;
-			display: flex;
+			display: none;
 			justify-content: center;
 
 			li {
@@ -41,8 +42,8 @@
 				}
 			}
 
-			@include bp(tablet) {
-				display: none;
+			@include bp(desktop) {
+				display: flex;
 			}
 		}
 	}
