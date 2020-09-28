@@ -1,0 +1,58 @@
+[
+	{
+		"name": "Vimotus Movilidad",
+		"duration": "12 semanas",
+		"time": "45 minutos",
+		"info": "Programa movilidad, mejora tu capacidad de movimiento a través de ejercicios progresivos.",
+		"price": "$40.000",
+		"id": "mobility",
+		"free": "false",
+		"dificulty": "3-5",
+		"equipment": "ninguno",
+		"training_type": "Stretching, flexibilidad, movilidad",
+		"focus": "Cuerpo Completo",
+		"frecuency": "3"
+	},
+	{
+		"name": "Vimotus Fuerza resistencia en casa",
+		"duration": "12 semanas",
+		"time": "45 minutos",
+		"info": "Programa fuerza resistencia, incrementa tu capacidad múscular con ejercicios de calistenia.",
+		"price": "$70.000",
+		"id": "strength",
+		"free": "false",
+		"dificulty": "3-5",
+		"equipment": "ninguno",
+		"training_type": "Fuerza, resistencia",
+		"focus": "Cuerpo completo",
+		"frecuency": "3"
+	},
+	{
+		"name": "Vimotus Glúteo",
+		"duration": "12 semanas - 45 min al día",
+		"time": "45 minutos",
+		"info": "Programa glúteo, fortalece y dale forma a tus glúteos con ejercicios enfocados en toda la zona inferior de tu cuerpo.",
+		"price": "$40.000",
+		"id": "glutes",
+		"free": "false",
+		"dificulty": "3-5",
+		"equipment": "ninguno",
+		"training_type": "Fuerza, resistencia",
+		"focus": "Gluteo",
+		"frecuency": "3"
+	},
+	{
+		"name": "Vimotus Core",
+		"duration": "12 semanas",
+		"time": "45 minutos",
+		"info": "Programa Core, tu nucleo es la base de todo tu cuerpo, fortalece esa zona con este programa que hará que tengas un core de acero.",
+		"price": "$40.000",
+		"id": "core",
+		"free": "false",
+		"dificulty": "3-5",
+		"equipment": "ninguno",
+		"training_type": "Core, HIIT, Cardiovascular",
+		"focus": "Core",
+		"frecuency": "5"
+	}
+]
