@@ -3,8 +3,8 @@ import React from 'react';
 const Menu = () => {
 
 	const closeMenu = (e) => {
-		console.log(e);
 		document.querySelector('.vm-menu').classList.remove('open');
+		document.querySelector('body').classList.remove('blocked');
 	}	
 
 	return (

@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Menu from './components/Menu';
 import Hero from './components/Hero';
 import Programs from './components/Programs';
+import About from './components/About';
 import { VimotusProvider } from './context';
 import data from './data/programs.json';
 
@@ -22,7 +23,7 @@ function App() {
             <Programs />
           </div>
         </div>
-        
+        <About />       
       </VimotusProvider>
     </div>
   );

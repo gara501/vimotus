@@ -2,6 +2,10 @@ body {
 	font-family: 'Fira Sans', sans-serif;
 }
 
+body.blocked {
+	overflow: hidden;
+}
+
 body, html {
 	height: 100%;
 }
@@ -11,13 +15,16 @@ h1, h2, h3, h4 ,h5 ,h6, p {
 	text-rendering: optimizelegibility;
 }
 
+p {
+	line-height: 1.5rem;
+}
+
 h1 {
-	font-size: 4rem;
+	font-size: 5rem;
 }
 
 h2 {
 	font-size: 3rem;
-	font-family: 'Open Sans',Arial,sans-serif;
 	font-weight: 300;
 }
 
@@ -60,7 +67,7 @@ h6 {
 }
 
 // Classes for margins and paddings
-@for $i from 1 through 10 {
+@for $i from 1 through 30 {
   .mt-#{$i} {
     margin-top: #{$i * 5}px;
 	}
@@ -120,16 +127,17 @@ h6 {
 	}
 }
 
-.whatsapp-button {
-	background: $wp-green;
+.featured {
 	align-items: center;
+	background: $red-strong;
+	border-radius: 20px;
 	color: $white;
-	display: flex;
-	justify-content: center;
-	padding: 5px;
+	display: inline-flex;
+	justify-content: flex-start;
+	padding: 5px 10px;
+}
 
-	img {
-		margin-right: 20px;
-		width: 30px;
-	}
+.font-light {
+	color: $white;
+	text-shadow: 2px 1px 2px black;
 }

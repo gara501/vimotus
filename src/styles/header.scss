@@ -1,9 +1,13 @@
 .vm-header {
 	align-items: center;
+	background-color: $white;
 	border-bottom: 1px solid $blue-light;
 	display: flex;
 	justify-content: space-between;
+	position: sticky;
+	top: 0;
 	width: 100%;
+	z-index: 5;
 
 	&__logo {
 		img {

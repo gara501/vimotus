@@ -6,6 +6,8 @@ const Header = () => {
 	const openMenu = (e) => {
 		console.log(e);
 		document.querySelector('.vm-menu').classList.add('open');
+		document.querySelector('body').classList.add('blocked');
+		window.scrollTo(0,0);
 	}
 
 	return (
@@ -23,7 +25,8 @@ const Header = () => {
 					<li><a href="#programas">Programas de Entrenamiento</a></li>
 					<li><a href="#nosotros">Nosotros</a></li>
 					<li><a href="#blog">Blog</a></li>
-					<li><a href="#contacto">contacto</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+					<li><a href="#usuarios">Usuarios</a></li>
 				</ul>
 			</nav>
 		</section>
