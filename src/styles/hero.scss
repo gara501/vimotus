@@ -1,6 +1,6 @@
 .vm-hero {
 	align-items: center;
-	background-image: url('../images/hero2.jpg');
+	background-image: url('../images/hero3.jpg');
 	background-attachment: fixed;
 	background-position: top;
 	background-size: cover;
@@ -9,6 +9,20 @@
 	justify-content: center;
 	position: relative;
 	width: 100%;
+
+	&.vm-info {
+		background-image: url('../images/hero.jpg');
+
+		.vm-hero__info {
+			max-width: 350px;	
+		}
+
+		.vm-hero__info--content {
+			background-color: $yellow-button;
+			padding: 20px;
+		}
+
+	}
 
 	&__caption {
 		color: $white;
@@ -37,13 +51,5 @@
 				font-size: 2rem;
 			}
 		}
-	}
-	
-	&__bg {
-		background-color: rgba(0, 0, 0, .5);
-		height: 100%;
-		position: absolute;
-		width: 100%;
-		z-index: 1;
 	}
 }

@@ -100,7 +100,7 @@ h6 {
 	text-transform: uppercase;
 	transition: 200ms ease-in all;
 
-	&.button__primary {
+	&.button--first {
 		background: $gray-dark;
 		border: 1px solid $white;
 		color: $white;
@@ -111,10 +111,21 @@ h6 {
 		}
 	}
 
-	&.button__secondary {
+	&.button--second {
 		background: $white;
 		border: 1px solid $gray-dark;
 		color: $gray-dark;
+
+		&:hover {
+			background: $gray-dark;
+			color: $white;
+		}
+	}
+
+	&.button--third {
+		background: transparent;
+		border: 2px solid $yellow-button;
+		color: $yellow-button;
 
 		&:hover {
 			background: $gray-dark;
@@ -140,4 +151,10 @@ h6 {
 .font-light {
 	color: $white;
 	text-shadow: 2px 1px 2px black;
+}
+
+.vm-flex-col-center {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
 }
