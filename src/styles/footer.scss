@@ -1,0 +1,43 @@
+.vm-footer {
+	background: $gray-black;
+
+	&__container {
+		color: $white;
+		display: flex;
+		flex-flow: column;
+
+		@include bp(desktop) {
+			flex-flow: row;
+		}
+	}
+
+	&__bl {
+		flex: 1;
+
+		h5 {
+			border-bottom: 3px solid $red-strong;
+			display: inline-block;
+			margin-bottom: 20px;
+			padding-bottom: 5px;
+		}
+
+		li {
+			padding: 5px 0;
+		}
+
+		a {
+			border-bottom: 2px solid $gray-black;
+			color: $white-dark;
+			font-weight: 200;
+			transition: border 300ms linear;
+
+			&:hover {
+				border-bottom: 1px solid $white-dark;
+			}
+		}
+
+		img {
+			width: 150px;
+		}
+	}	
+}

@@ -4,6 +4,8 @@ import Menu from './components/Menu';
 import Hero from './components/Hero';
 import Programs from './components/Programs';
 import About from './components/About';
+import Footer from './components/Footer';
+import Info from './components/Info';
 import { VimotusProvider } from './context';
 import data from './data/programs.json';
 
@@ -23,7 +25,9 @@ function App() {
             <Programs />
           </div>
         </div>
-        <About />       
+        <About /> 
+        <Info />       
+        <Footer />
       </VimotusProvider>
     </div>
   );
